@@ -22,8 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '0aq+bm4mkc(c7k*l-p6=x_r3e+3l)m#qwo2dqxdgl)okfa2v1e'
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False if os.environ.get('DEBUG_OPTION') else True
 
 ALLOWED_HOSTS = []
 
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'pokebattle',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -118,3 +120,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'pokebattle/cache/'),
+    }
+}
+
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
+
+
+
+
