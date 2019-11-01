@@ -130,8 +130,9 @@ CACHES = {
 
 
 # Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
+if os.environ.get('DEBUG_OPTION'):
+    import django_heroku
+    django_heroku.settings(locals())
 
 
 
