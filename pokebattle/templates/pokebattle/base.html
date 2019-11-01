@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+  {% block html %}
+  <html>
+  {% endblock html %}
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      {% load static %}
+      <link type="text/css" rel="stylesheet" href="{% static 'pokebattle/css/materialize.css' %}"  media="screen,projection"/>
+      {% block style %}
+      {% endblock style %}
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="shortcut icon" href="">
+      <title>{% block title %}.: Poke Battle :.{% endblock title %}</title>
+    </head>
+
+    {% block body %}
+    <body>
+    {% endblock body %}
+
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper cyan darken-2">
+            <a href="#!" class="brand-logo center">{% block logo %} Poke Battle {% endblock logo %}</a>
+            <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="menu-btn">menu</i></a>
+            {% block search %}{% endblock search %}
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav" id="mobile-demo">
+        {% block sidenav %}
+          <li class="user-details cyan darken-2" style="cursor: pointer;" id="profile">
+          <div class="row">
+            <div class="col s12 center white-text">
+              <h6>Poke Battle</h6><br>
+            </div>
+          </div>
+        </li>
+        <li class="user-details cyan darken-2 center white-text">
+
+        </li>
+
+        <li><a href="{% url 'battle' %}" class="menu"><i class="material-icons">star</i>Battle</a></li>
+        <li><a href="{% url 'mypokemon' %}" class="menu"><i class="material-icons">thumb_up</i>My Pokemon</a></li>
+        <li class="white"><div class="divider"></div></li>
+        {% endblock sidenav %}
+      </ul>
+
+      <div class="" id="main" style="padding-top:15px;">
+        {% block content %}
+          <div class="center">
+          <img src="{% static 'pokebattle/img/3d/pokemon_icon_025_01_01.png' %}" alt="Avatar" class="avatar">
+            <h4>You Gotta Catch Them All!</h4>
+          </div>
+        {% endblock content %}
+      </div>
+
+      <script src="{% static 'pokebattle/js/jquery.min.js' %}"></script>
+      <script src="{% static 'pokebattle/js/materialize.js' %}"></script>
+
+      {% block libs %}
+      {% endblock libs %}
+
+      <script>
+          M.AutoInit();
+
+          function toast(text){
+              M.toast({html: text, displayLength: 2000});
+          }
+
+          {% block script %}
+          {% endblock script %}
+      </script>
+
+    </body>
+  </html>
