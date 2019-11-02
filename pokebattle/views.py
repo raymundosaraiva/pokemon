@@ -4,7 +4,7 @@ from .controller import *
 
 
 def index(request):
-    user = login(request)
+    user = login()
     if user:
         context = {'user': user}
         return render(request, 'pokebattle/base.html', context)
