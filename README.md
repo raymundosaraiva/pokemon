@@ -5,6 +5,7 @@
  
 #### _Requirements_
 `Django>=2.1.7`
+`Pillow>=5.4.1`
 
 **Run Locally**\
 `$ python manage.py runserver`\
