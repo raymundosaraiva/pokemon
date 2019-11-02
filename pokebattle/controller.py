@@ -4,7 +4,7 @@ from .models import *
 
 
 def login(request):
-    ip = request.META.get('HTTP_X_REAL_IP')
+    ip = request.META.get('HTTP_X_REAL_IP', '000.0.0.0')
     try:
         trainer = Trainer.objects.get(ip=ip)
         print(f'Login from IP: {ip} at {datetime.datetime.now()}')
