@@ -1,6 +1,13 @@
 from django.shortcuts import render
 
+from .controller import *
+
 
 def index(request):
-    context = {}
-    return render(request, 'pokebattle/base.html', context)
+    user = login()
+    if user:
+        context = {'user': user}
+        return render(request, 'pokebattle/base.html', context)
+    else:
+        return render(request, 'pokebattle/404.html')
+

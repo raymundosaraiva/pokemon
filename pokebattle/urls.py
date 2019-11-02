@@ -7,4 +7,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('', views.index, name='battle'),
     path('', views.index, name='mypokemon'),
+    path('', views.index, name='stats'),
 ]
