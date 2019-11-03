@@ -4,7 +4,11 @@ from .models import *
 
 
 def login(request):
-    ip = request.META.get('HTTP_X_REAL_IP', '000.0.0.0')
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
     try:
         trainer = Trainer.objects.get(ip=ip)
         print(f'Login from IP: {ip} at {datetime.datetime.now()}')
