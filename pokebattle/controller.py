@@ -10,7 +10,7 @@ def login(request):
         return None
     try:
         trainer = Trainer.objects.get(mac=mac)
-        print(f'Login from IP: {ip} at {datetime.datetime.now()}')
+        print(f'Login from MAC: {mac} at {datetime.datetime.now()}')
     except Trainer.DoesNotExist:
         trainer = Trainer(mac=mac)
         trainer.save()
