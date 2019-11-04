@@ -16,46 +16,44 @@
       <title>{% block title %}.: Poke Battle :.{% endblock title %}</title>
     </head>
 
-    {% block body %}
     <body>
-    {% endblock body %}
 
+    <app class="hide-on-large-only">
       <div class="navbar-fixed">
         <nav class="transparent z-depth-0">
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo center red-text">{% block logo %} Poke Battle {% endblock logo %}</a>
             <a href="#!" data-target="mobile-demo" class="sidenav-trigger red-text"><i class="material-icons" id="menu-btn">menu</i></a>
-            {% block search %}{% endblock search %}
           </div>
         </nav>
       </div>
 
       <ul class="sidenav" id="mobile-demo">
         {% block sidenav %}
-          <li class="user-details red darken-4" style="cursor: pointer;" id="profile">
+
+        <li class="user-details red darken-4" style="cursor: pointer;" id="profile">
           <div class="row">
-            <div class="col s12 center white-text">
-              <h5>{{user.nickname}}</h5>
-              <h6>{{user.mac}}</h6>
+            <div class="col s12 center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXaghKO1qiA-qnGUxN1KZQCXSoEVYB2g8wf5kGhX6yg-AitIXc_A&s" style="margin-top:20px;width:50px;" class="circle responsive-img">
+                <div class="input-field center" style="margin-top:-10px;margin-bottom:0;font-size: 18px;" id="nickBlock"><a href="#" onclick="setNickInput()">{{trainer.nickname}}</a></div>
             </div>
           </div>
-        </li>
-        <li class="user-details cyan darken-2 center white-text">
-
         </li>
 
         <li><a href="{% url 'battle' %}" class="menu"><i class="material-icons">record_voice_over</i>Battle</a></li>
         <li><a href="{% url 'mypokemon' %}" class="menu"><i class="material-icons">remove_red_eye</i>My Pokemon</a></li>
         <li><a href="{% url 'stats' %}" class="menu"><i class="material-icons">pie_chart_outlined</i>Stats</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="{% url 'about' %}" class="menu"><i class="material-icons">info</i>About</a></li>
 
         {% endblock sidenav %}
       </ul>
 
       <div class="" id="main" style="padding-top:15px;">
         {% block content %}
-          <div class="center">
-          <img src="{% static 'pokebattle/img/3d/pokemon_icon_025_01_01.png' %}" alt="Avatar" class="avatar" width="150px">
-            <h5 class="red-text">You Gotta Catch Them All!</h5>
+          <div class="center"><br>
+          <img src="http://www.pokestadium.com/sprites/xy/pikachu.gif">
+            <h5>You Gotta Catch Them All!</h5>
           </div>
         {% endblock content %}
       </div>
@@ -66,6 +64,7 @@
       {% block libs %}
       {% endblock libs %}
 
+
       <script>
           M.AutoInit();
 
@@ -73,9 +72,48 @@
               M.toast({html: text, displayLength: 2000});
           }
 
+          var nickname = "{{trainer.nickname}}";
+
+          function setNickInput(){
+            $("#nickBlock").html(
+                '<div class="col s8"><input id="userName" class="white-text center" type="text" value="'+ nickname +'"></div>' +
+                '<div class="col s2"><a href="#" onclick="save()"><i class="material-icons" title="Save">save</i></a></div>' +
+                '<div class="col s2"><a href="#" onclick="cancel()"><i class="material-icons" title="Cancel">close</i></a></div>'
+                );
+          }
+
+          function save() {
+              var new_nickname = $('#userName').val()
+              if(!new_nickname || new_nickname === nickname){
+                  cancel();
+              } else {
+                  $.post("/change_nickname",
+                      {nickname: new_nickname})
+                      .done(function (data) {
+                          $("#nickBlock").html(getNickButton(new_nickname));
+                          toast('Nickname Changed to ' + new_nickname);
+                          nickname = new_nickname;
+                      })
+                      .fail(function () {
+                          toast('Error While Saving!');
+                      });
+              }
+          }
+
+          function cancel(){
+            $('#nickBlock').html(getNickButton(nickname));
+          }
+
+          function getNickButton(nick) {
+              return '<a href="#" onclick="setNickInput()">'+ nick +'</a>';
+          }
+
           {% block script %}
           {% endblock script %}
       </script>
+    </app>
+
+    {% include 'pokebattle/large_screen.html' %}
 
     </body>
   </html>

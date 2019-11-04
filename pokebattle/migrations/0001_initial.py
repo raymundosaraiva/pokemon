@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Trainer',
             fields=[
-                ('ip', models.GenericIPAddressField(primary_key=True, serialize=False, unique=True)),
+                ('mac', models.CharField(primary_key=True, serialize=False, unique=True, max_length=40)),
                 ('nickname', models.CharField(default='Anonymous', max_length=20)),
                 ('img', models.ImageField(blank=True, null=True, upload_to='')),
                 ('date_created', models.DateTimeField(auto_now_add=True)),
