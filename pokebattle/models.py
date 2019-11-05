@@ -12,11 +12,11 @@ class Trainer(models.Model):
 
 
 class Pokemon(models.Model):
-    pokemon_id = models.IntegerField()
-    name = models.CharField(max_length=20, default='Anonymous')
-    attack = models.IntegerField()
-    defense = models.IntegerField()
-    stamina = models.IntegerField()
+    pokemon_id = models.IntegerField(primary_key=True, unique=True)
+    name = models.CharField(max_length=20, null=False, blank=False)
+    attack = models.IntegerField(null=False, blank=False)
+    defense = models.IntegerField(null=False, blank=False)
+    stamina = models.IntegerField(null=False, blank=False)
 
     def __str__(self):
-        return self.pokemon_id
+        return self.name
