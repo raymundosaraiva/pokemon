@@ -127,3 +127,5 @@ dmypy.json
 .idea/dataSources.local.xml
 .idea/dataSources.xml
 *.xml
+.idea/misc.xml
+.idea/pokemon.iml
