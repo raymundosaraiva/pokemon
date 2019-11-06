@@ -1,22 +1,1 @@
-from django.db import models
-
-
-class Trainer(models.Model):
-    nickname = models.CharField(max_length=20, default='Anonymous')
-    img = models.ImageField(blank=True, null=True)
-    date_created = models.DateTimeField(auto_now_add=True)
-    last_login = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.nickname
-
-
-class Pokemon(models.Model):
-    pokemon_id = models.IntegerField(primary_key=True, unique=True)
-    name = models.CharField(max_length=20, null=False, blank=False)
-    attack = models.IntegerField(null=False, blank=False)
-    defense = models.IntegerField(null=False, blank=False)
-    stamina = models.IntegerField(null=False, blank=False)
-
-    def __str__(self):
-        return self.name
+from django.db import modelsfrom .constants import *class Pokemon(models.Model):    pokemon_id = models.IntegerField(primary_key=True, unique=True)    name = models.CharField(max_length=20)    attack = models.IntegerField()    defense = models.IntegerField()    stamina = models.IntegerField()    def __str__(self):        return f'{self.pokemon_id} - {self.name}'class Trainer(models.Model):    nickname = models.CharField(max_length=20, default=ANONYMOUS)    img = models.ImageField(blank=True, null=True)    date_created = models.DateTimeField(auto_now=True)    last_login = models.DateTimeField(auto_now=True)    pokemon_collection = models.ManyToManyField(Pokemon, blank=True)    def __str__(self):        return f'{self.id} - {self.nickname}'class Game(models.Model):    started = models.DateTimeField(auto_now=True)    mode = models.IntegerField(choices=GAME_MODE, default=1)    status = models.IntegerField(choices=GAME_STATUS, default=1)    trainer = models.ForeignKey(Trainer, on_delete=models.CASCADE)    def __str__(self):        return f'G{self.id} - T{self.trainer.id}'class Battle(models.Model):    num = models.IntegerField(choices=BATTLE_NUM)    type = models.IntegerField(choices=BATTLE_TYPE)    result = models.IntegerField(choices=BATTLE_RESULT, blank=True)    game = models.ForeignKey(Game, on_delete=models.CASCADE)    pokemon_trainer = models.ForeignKey(Pokemon, related_name='pokemon_trainer', on_delete=models.CASCADE)    pokemon_pc = models.ForeignKey(Pokemon, related_name='pokemon_pc', on_delete=models.CASCADE)    def __str__(self):        return f'G{self.game.id} - B{self.id}'
