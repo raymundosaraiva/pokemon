@@ -1,7 +1,6 @@
 from django.urls import path
 
-from . import views
-from django.conf.urls import url
+from . import views, engine
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -10,4 +9,5 @@ urlpatterns = [
     path('stats', views.stats, name='stats'),
     path('about', views.about, name='about'),
     path('change_nickname', views.change_nickname, name='change_nickname'),
+    path('loadgame', engine.load_game, name='loadgame'),
 ]

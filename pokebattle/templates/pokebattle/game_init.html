@@ -1,0 +1,21 @@
+
+
+  <div class="game">
+    <h5>Hello {{ trainer.nickname }}</h5>
+
+    <h6>Please, choose the game options bellow:</h6><br>
+
+    <div class="row">
+      <div class="col s6">
+        <a onclick="load_game({mode:1})" class="btn green">Easy</a>
+      </div>
+      <div class="col s6">
+        <a onclick="load_game({mode:3})" class="btn red">Hard</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    toast("Game Options!")
+  </script>

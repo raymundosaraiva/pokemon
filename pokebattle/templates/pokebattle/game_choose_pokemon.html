@@ -1,0 +1,43 @@
+
+
+  <div class="game">
+    <h5>{{ battle }} Battle - {{ type }}</h5>
+
+    <h6>Choose your Pokemon:</h6>
+    <br><br>
+    <div class="row valign-wrapper">
+      {% for p in pokemon %}
+      <div class="center col s{{ colsize }}">
+        <a onclick="load_game({pokemon:{{ p.pokemon_id }}})" style="cursor:pointer;"><img src="{{ p.url }}"></a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="row">
+      {% for p in pokemon %}
+      <div class="center col s{{ colsize }}">
+        <h6>{{ p.name }}</h6>
+        <h6>A: {{ p.attack }}</h6>
+        <h6>D: {{ p.defense }}</h6>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if pokemon_pc %}
+    <div class="row">
+      <div class="center col s3"></div>
+      <div class="center col s6 card-panel teal">
+        <h6 class="btn disabled">Easy</h6>
+        <h6>Opponent</h6>
+        <img src="{{ pokemon_pc.url }}"></a>
+        <h6>{{ pokemon_pc.name }}</h6>
+      </div>
+      <div class="center col s3"></div>
+    </div>
+    {% endif %}
+
+  </div>
+
+  <script>
+    toast("Choose your Pokemon!")
+  </script>

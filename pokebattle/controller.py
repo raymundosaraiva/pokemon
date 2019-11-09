@@ -1,4 +1,7 @@
 import datetime
+import os
+import json
+import requests
 
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import HttpResponse
@@ -19,6 +22,9 @@ def login(request):
         trainer.save()
         request.session['user_login'] = trainer.id
 
+    if not Pokemon.objects.all().exists():
+        load_pokemon()
+
     return {'trainer': trainer}
 
 
@@ -36,3 +42,44 @@ def change_nickname(request):
         trainer.save()
     return HttpResponse(new_nickname)
 
+
+def load_pokemon():
+    module_dir = os.path.dirname(__file__)
+    json_path = module_dir + '/static/pokebattle/json/'
+    with open(json_path + 'pokemon_stats.json') as pokemon_stats, \
+        open(json_path + 'pokemon_types.json') as pokemon_types:
+        stats = json.load(pokemon_stats)
+        types = json.load(pokemon_types)
+        for s, t in zip(stats, types):
+            if 'form' not in s or 'Normal' in s['form']:
+                pokemon_id = s['pokemon_id']
+                name = fix_name(s['pokemon_name'])
+                attack = s['base_attack']
+                defense = s['base_defense']
+                stamina = s['base_stamina']
+                pokemon_type = t['type']
+                # Save Pokemon
+                Pokemon.objects.get_or_create(pokemon_id=pokemon_id,
+                                              name=name,
+                                              attack=attack,
+                                              defense=defense,
+                                              stamina=stamina)
+    pokemon_stats.close()
+    pokemon_types.close()
+
+
+def fix_name(name):
+    if '♂' in name:
+        name = name.replace('♂', 'm')
+    elif '♀' in name:
+        name = name.replace('♀', 'f')
+    elif '’' in name:
+        name = name.replace('’', '')
+    elif '. ' in name:
+        name = name.replace('. ', '-')
+    return name
+
+
+def check_url_exists(url):
+    response = requests.head(url)
+    return response.status_code == 200

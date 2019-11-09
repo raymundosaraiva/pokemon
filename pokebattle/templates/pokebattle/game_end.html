@@ -1,0 +1,44 @@
+
+
+  <div class="game">
+    <h5>Results for {{ battle }} Battle with {{ type }}</h5>
+
+    <br><br>
+    <div class="row valign-wrapper">
+      <div class="col s6">
+        <img src="{{ pokemon_defense.url }}">
+      </div>
+      <div class="col s6">
+        <img src="{{ pokemon_attack.url }}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <h6>{{ pokemon_defense.name }}</h6>
+        <h6>D: {{ pokemon_defense.defense }}</h6>
+      </div>
+      <div class="col s6">
+        <h6>{{ pokemon_attack.name }}</h6>
+        <h6>A: {{ pokemon_attack.attack }}</h6>
+      </div>
+    </div>
+    <br>
+{#    <h6>You have 999 in {{ type }}!</h6>#}
+{#    <h6>Against 999 for {{ type_pc }}!</h6>#}
+    <br><br>
+    <h5>{{ result }}!</h5>
+
+    <br><br>
+    {% if next %}
+    <a onclick="load_game()" class="btn">Next Battle</a>
+    {% else %}
+    <a href="{% url 'battle' %}"  class="btn">New Game</a><br>
+    <a href="{% url 'mypokemon' %}"  class="btn">Pokemon</a>
+    <a href="{% url 'stats' %}"  class="btn">Results</a>
+    {% endif %}
+
+  </div>
+
+  <script>
+    toast("{{ result }}!")
+  </script>
