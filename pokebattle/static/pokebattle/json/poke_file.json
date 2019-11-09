@@ -1,0 +1,3425 @@
+[
+    {
+        "pokemon_id": 1,
+        "name": "Bulbasaur",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 118,
+        "defense": 111,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 2,
+        "name": "Ivysaur",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 151,
+        "defense": 143,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 3,
+        "name": "Venusaur",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 198,
+        "defense": 189,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 4,
+        "name": "Charmander",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 116,
+        "defense": 93,
+        "stamina": 118
+    },
+    {
+        "pokemon_id": 5,
+        "name": "Charmeleon",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 158,
+        "defense": 126,
+        "stamina": 151
+    },
+    {
+        "pokemon_id": 6,
+        "name": "Charizard",
+        "pokemon_type": [
+            "Fire",
+            "Flying"
+        ],
+        "attack": 223,
+        "defense": 173,
+        "stamina": 186
+    },
+    {
+        "pokemon_id": 7,
+        "name": "Squirtle",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 94,
+        "defense": 121,
+        "stamina": 127
+    },
+    {
+        "pokemon_id": 8,
+        "name": "Wartortle",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 126,
+        "defense": 155,
+        "stamina": 153
+    },
+    {
+        "pokemon_id": 9,
+        "name": "Blastoise",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 171,
+        "defense": 207,
+        "stamina": 188
+    },
+    {
+        "pokemon_id": 10,
+        "name": "Caterpie",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 55,
+        "defense": 55,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 11,
+        "name": "Metapod",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 45,
+        "defense": 80,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 12,
+        "name": "Butterfree",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 167,
+        "defense": 137,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 13,
+        "name": "Weedle",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 63,
+        "defense": 50,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 14,
+        "name": "Kakuna",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 46,
+        "defense": 75,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 15,
+        "name": "Beedrill",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 169,
+        "defense": 130,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 16,
+        "name": "Pidgey",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 85,
+        "defense": 73,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 17,
+        "name": "Pidgeotto",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 117,
+        "defense": 105,
+        "stamina": 160
+    },
+    {
+        "pokemon_id": 18,
+        "name": "Pidgeot",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 166,
+        "defense": 154,
+        "stamina": 195
+    },
+    {
+        "pokemon_id": 19,
+        "name": "Rattata",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 103,
+        "defense": 70,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 20,
+        "name": "Raticate",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 161,
+        "defense": 139,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 21,
+        "name": "Spearow",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 112,
+        "defense": 60,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 22,
+        "name": "Fearow",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 182,
+        "defense": 133,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 23,
+        "name": "Ekans",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 110,
+        "defense": 97,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 24,
+        "name": "Arbok",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 167,
+        "defense": 153,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 25,
+        "name": "Pikachu",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 112,
+        "defense": 96,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 26,
+        "name": "Raichu",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 193,
+        "defense": 151,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 27,
+        "name": "Sandshrew",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 126,
+        "defense": 120,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 28,
+        "name": "Sandslash",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 182,
+        "defense": 175,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 29,
+        "name": "Nidoran\u2640",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 86,
+        "defense": 89,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 30,
+        "name": "Nidorina",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 117,
+        "defense": 120,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 31,
+        "name": "Nidoqueen",
+        "pokemon_type": [
+            "Poison",
+            "Ground"
+        ],
+        "attack": 180,
+        "defense": 173,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 32,
+        "name": "Nidoran\u2642",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 105,
+        "defense": 76,
+        "stamina": 130
+    },
+    {
+        "pokemon_id": 33,
+        "name": "Nidorino",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 137,
+        "defense": 111,
+        "stamina": 156
+    },
+    {
+        "pokemon_id": 34,
+        "name": "Nidoking",
+        "pokemon_type": [
+            "Poison",
+            "Ground"
+        ],
+        "attack": 204,
+        "defense": 156,
+        "stamina": 191
+    },
+    {
+        "pokemon_id": 35,
+        "name": "Clefairy",
+        "pokemon_type": [
+            "Fairy"
+        ],
+        "attack": 107,
+        "defense": 108,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 36,
+        "name": "Clefable",
+        "pokemon_type": [
+            "Fairy"
+        ],
+        "attack": 178,
+        "defense": 162,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 37,
+        "name": "Vulpix",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 96,
+        "defense": 109,
+        "stamina": 116
+    },
+    {
+        "pokemon_id": 38,
+        "name": "Ninetales",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 169,
+        "defense": 190,
+        "stamina": 177
+    },
+    {
+        "pokemon_id": 39,
+        "name": "Jigglypuff",
+        "pokemon_type": [
+            "Normal",
+            "Fairy"
+        ],
+        "attack": 80,
+        "defense": 41,
+        "stamina": 251
+    },
+    {
+        "pokemon_id": 40,
+        "name": "Wigglytuff",
+        "pokemon_type": [
+            "Normal",
+            "Fairy"
+        ],
+        "attack": 156,
+        "defense": 90,
+        "stamina": 295
+    },
+    {
+        "pokemon_id": 41,
+        "name": "Zubat",
+        "pokemon_type": [
+            "Poison",
+            "Flying"
+        ],
+        "attack": 83,
+        "defense": 73,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 42,
+        "name": "Golbat",
+        "pokemon_type": [
+            "Poison",
+            "Flying"
+        ],
+        "attack": 161,
+        "defense": 150,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 43,
+        "name": "Oddish",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 131,
+        "defense": 112,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 44,
+        "name": "Gloom",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 153,
+        "defense": 136,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 45,
+        "name": "Vileplume",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 202,
+        "defense": 167,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 46,
+        "name": "Paras",
+        "pokemon_type": [
+            "Bug",
+            "Grass"
+        ],
+        "attack": 121,
+        "defense": 99,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 47,
+        "name": "Parasect",
+        "pokemon_type": [
+            "Bug",
+            "Grass"
+        ],
+        "attack": 165,
+        "defense": 146,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 48,
+        "name": "Venonat",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 100,
+        "defense": 100,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 49,
+        "name": "Venomoth",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 179,
+        "defense": 143,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 50,
+        "name": "Diglett",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 109,
+        "defense": 78,
+        "stamina": 67
+    },
+    {
+        "pokemon_id": 51,
+        "name": "Dugtrio",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 167,
+        "defense": 136,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 52,
+        "name": "Meowth",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 92,
+        "defense": 78,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 53,
+        "name": "Persian",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 150,
+        "defense": 136,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 54,
+        "name": "Psyduck",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 122,
+        "defense": 95,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 55,
+        "name": "Golduck",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 191,
+        "defense": 162,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 56,
+        "name": "Mankey",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 148,
+        "defense": 82,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 57,
+        "name": "Primeape",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 207,
+        "defense": 138,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 58,
+        "name": "Growlithe",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 136,
+        "defense": 93,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 59,
+        "name": "Arcanine",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 227,
+        "defense": 166,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 60,
+        "name": "Poliwag",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 101,
+        "defense": 82,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 61,
+        "name": "Poliwhirl",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 130,
+        "defense": 123,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 62,
+        "name": "Poliwrath",
+        "pokemon_type": [
+            "Water",
+            "Fighting"
+        ],
+        "attack": 182,
+        "defense": 184,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 63,
+        "name": "Abra",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 195,
+        "defense": 82,
+        "stamina": 93
+    },
+    {
+        "pokemon_id": 64,
+        "name": "Kadabra",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 232,
+        "defense": 117,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 65,
+        "name": "Alakazam",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 271,
+        "defense": 167,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 66,
+        "name": "Machop",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 137,
+        "defense": 82,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 67,
+        "name": "Machoke",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 177,
+        "defense": 125,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 68,
+        "name": "Machamp",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 234,
+        "defense": 159,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 69,
+        "name": "Bellsprout",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 139,
+        "defense": 61,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 70,
+        "name": "Weepinbell",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 172,
+        "defense": 92,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 71,
+        "name": "Victreebel",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 207,
+        "defense": 135,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 72,
+        "name": "Tentacool",
+        "pokemon_type": [
+            "Water",
+            "Poison"
+        ],
+        "attack": 97,
+        "defense": 149,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 73,
+        "name": "Tentacruel",
+        "pokemon_type": [
+            "Water",
+            "Poison"
+        ],
+        "attack": 166,
+        "defense": 209,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 74,
+        "name": "Geodude",
+        "pokemon_type": [
+            "Rock",
+            "Ground"
+        ],
+        "attack": 132,
+        "defense": 132,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 75,
+        "name": "Graveler",
+        "pokemon_type": [
+            "Rock",
+            "Ground"
+        ],
+        "attack": 164,
+        "defense": 164,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 76,
+        "name": "Golem",
+        "pokemon_type": [
+            "Rock",
+            "Ground"
+        ],
+        "attack": 211,
+        "defense": 198,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 77,
+        "name": "Ponyta",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 170,
+        "defense": 127,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 78,
+        "name": "Rapidash",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 207,
+        "defense": 162,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 79,
+        "name": "Slowpoke",
+        "pokemon_type": [
+            "Water",
+            "Psychic"
+        ],
+        "attack": 109,
+        "defense": 98,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 80,
+        "name": "Slowbro",
+        "pokemon_type": [
+            "Water",
+            "Psychic"
+        ],
+        "attack": 177,
+        "defense": 180,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 81,
+        "name": "Magnemite",
+        "pokemon_type": [
+            "Electric",
+            "Steel"
+        ],
+        "attack": 165,
+        "defense": 121,
+        "stamina": 93
+    },
+    {
+        "pokemon_id": 82,
+        "name": "Magneton",
+        "pokemon_type": [
+            "Electric",
+            "Steel"
+        ],
+        "attack": 223,
+        "defense": 169,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 83,
+        "name": "Farfetch\u2019d",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 124,
+        "defense": 115,
+        "stamina": 141
+    },
+    {
+        "pokemon_id": 84,
+        "name": "Doduo",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 158,
+        "defense": 83,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 85,
+        "name": "Dodrio",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 218,
+        "defense": 140,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 86,
+        "name": "Seel",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 85,
+        "defense": 121,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 87,
+        "name": "Dewgong",
+        "pokemon_type": [
+            "Water",
+            "Ice"
+        ],
+        "attack": 139,
+        "defense": 177,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 88,
+        "name": "Grimer",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 135,
+        "defense": 90,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 89,
+        "name": "Muk",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 190,
+        "defense": 172,
+        "stamina": 233
+    },
+    {
+        "pokemon_id": 90,
+        "name": "Shellder",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 116,
+        "defense": 134,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 91,
+        "name": "Cloyster",
+        "pokemon_type": [
+            "Water",
+            "Ice"
+        ],
+        "attack": 186,
+        "defense": 256,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 92,
+        "name": "Gastly",
+        "pokemon_type": [
+            "Ghost",
+            "Poison"
+        ],
+        "attack": 186,
+        "defense": 67,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 93,
+        "name": "Haunter",
+        "pokemon_type": [
+            "Ghost",
+            "Poison"
+        ],
+        "attack": 223,
+        "defense": 107,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 94,
+        "name": "Gengar",
+        "pokemon_type": [
+            "Ghost",
+            "Poison"
+        ],
+        "attack": 261,
+        "defense": 149,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 95,
+        "name": "Onix",
+        "pokemon_type": [
+            "Rock",
+            "Ground"
+        ],
+        "attack": 85,
+        "defense": 232,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 96,
+        "name": "Drowzee",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 89,
+        "defense": 136,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 97,
+        "name": "Hypno",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 144,
+        "defense": 193,
+        "stamina": 198
+    },
+    {
+        "pokemon_id": 98,
+        "name": "Krabby",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 181,
+        "defense": 124,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 99,
+        "name": "Kingler",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 240,
+        "defense": 181,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 100,
+        "name": "Voltorb",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 109,
+        "defense": 111,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 101,
+        "name": "Electrode",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 173,
+        "defense": 173,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 102,
+        "name": "Exeggcute",
+        "pokemon_type": [
+            "Grass",
+            "Psychic"
+        ],
+        "attack": 107,
+        "defense": 125,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 103,
+        "name": "Exeggutor",
+        "pokemon_type": [
+            "Grass",
+            "Psychic"
+        ],
+        "attack": 233,
+        "defense": 149,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 104,
+        "name": "Cubone",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 90,
+        "defense": 144,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 105,
+        "name": "Marowak",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 144,
+        "defense": 186,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 106,
+        "name": "Hitmonlee",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 224,
+        "defense": 181,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 107,
+        "name": "Hitmonchan",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 193,
+        "defense": 197,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 108,
+        "name": "Lickitung",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 108,
+        "defense": 137,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 109,
+        "name": "Koffing",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 119,
+        "defense": 141,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 110,
+        "name": "Weezing",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 174,
+        "defense": 197,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 111,
+        "name": "Rhyhorn",
+        "pokemon_type": [
+            "Ground",
+            "Rock"
+        ],
+        "attack": 140,
+        "defense": 127,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 112,
+        "name": "Rhydon",
+        "pokemon_type": [
+            "Ground",
+            "Rock"
+        ],
+        "attack": 222,
+        "defense": 171,
+        "stamina": 233
+    },
+    {
+        "pokemon_id": 113,
+        "name": "Chansey",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 60,
+        "defense": 128,
+        "stamina": 487
+    },
+    {
+        "pokemon_id": 114,
+        "name": "Tangela",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 183,
+        "defense": 169,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 115,
+        "name": "Kangaskhan",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 181,
+        "defense": 165,
+        "stamina": 233
+    },
+    {
+        "pokemon_id": 116,
+        "name": "Horsea",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 129,
+        "defense": 103,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 117,
+        "name": "Seadra",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 187,
+        "defense": 156,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 118,
+        "name": "Goldeen",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 123,
+        "defense": 110,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 119,
+        "name": "Seaking",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 175,
+        "defense": 147,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 120,
+        "name": "Staryu",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 137,
+        "defense": 112,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 121,
+        "name": "Starmie",
+        "pokemon_type": [
+            "Water",
+            "Psychic"
+        ],
+        "attack": 210,
+        "defense": 184,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 122,
+        "name": "Mr. Mime",
+        "pokemon_type": [
+            "Psychic",
+            "Fairy"
+        ],
+        "attack": 192,
+        "defense": 205,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 123,
+        "name": "Scyther",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 218,
+        "defense": 170,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 124,
+        "name": "Jynx",
+        "pokemon_type": [
+            "Ice",
+            "Psychic"
+        ],
+        "attack": 223,
+        "defense": 151,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 125,
+        "name": "Electabuzz",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 198,
+        "defense": 158,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 126,
+        "name": "Magmar",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 206,
+        "defense": 154,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 127,
+        "name": "Pinsir",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 238,
+        "defense": 182,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 128,
+        "name": "Tauros",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 198,
+        "defense": 183,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 129,
+        "name": "Magikarp",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 29,
+        "defense": 85,
+        "stamina": 85
+    },
+    {
+        "pokemon_id": 130,
+        "name": "Gyarados",
+        "pokemon_type": [
+            "Water",
+            "Flying"
+        ],
+        "attack": 237,
+        "defense": 186,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 131,
+        "name": "Lapras",
+        "pokemon_type": [
+            "Water",
+            "Ice"
+        ],
+        "attack": 165,
+        "defense": 174,
+        "stamina": 277
+    },
+    {
+        "pokemon_id": 132,
+        "name": "Ditto",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 91,
+        "defense": 91,
+        "stamina": 134
+    },
+    {
+        "pokemon_id": 133,
+        "name": "Eevee",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 104,
+        "defense": 114,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 134,
+        "name": "Vaporeon",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 205,
+        "defense": 161,
+        "stamina": 277
+    },
+    {
+        "pokemon_id": 135,
+        "name": "Jolteon",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 232,
+        "defense": 182,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 136,
+        "name": "Flareon",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 246,
+        "defense": 179,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 137,
+        "name": "Porygon",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 153,
+        "defense": 136,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 138,
+        "name": "Omanyte",
+        "pokemon_type": [
+            "Rock",
+            "Water"
+        ],
+        "attack": 155,
+        "defense": 153,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 139,
+        "name": "Omastar",
+        "pokemon_type": [
+            "Rock",
+            "Water"
+        ],
+        "attack": 207,
+        "defense": 201,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 140,
+        "name": "Kabuto",
+        "pokemon_type": [
+            "Rock",
+            "Water"
+        ],
+        "attack": 148,
+        "defense": 140,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 141,
+        "name": "Kabutops",
+        "pokemon_type": [
+            "Rock",
+            "Water"
+        ],
+        "attack": 220,
+        "defense": 186,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 142,
+        "name": "Aerodactyl",
+        "pokemon_type": [
+            "Rock",
+            "Flying"
+        ],
+        "attack": 221,
+        "defense": 159,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 143,
+        "name": "Snorlax",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 190,
+        "defense": 169,
+        "stamina": 330
+    },
+    {
+        "pokemon_id": 144,
+        "name": "Articuno",
+        "pokemon_type": [
+            "Ice",
+            "Flying"
+        ],
+        "attack": 192,
+        "defense": 236,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 145,
+        "name": "Zapdos",
+        "pokemon_type": [
+            "Electric",
+            "Flying"
+        ],
+        "attack": 253,
+        "defense": 185,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 146,
+        "name": "Moltres",
+        "pokemon_type": [
+            "Fire",
+            "Flying"
+        ],
+        "attack": 251,
+        "defense": 181,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 147,
+        "name": "Dratini",
+        "pokemon_type": [
+            "Dragon"
+        ],
+        "attack": 119,
+        "defense": 91,
+        "stamina": 121
+    },
+    {
+        "pokemon_id": 148,
+        "name": "Dragonair",
+        "pokemon_type": [
+            "Dragon"
+        ],
+        "attack": 163,
+        "defense": 135,
+        "stamina": 156
+    },
+    {
+        "pokemon_id": 149,
+        "name": "Dragonite",
+        "pokemon_type": [
+            "Dragon",
+            "Flying"
+        ],
+        "attack": 263,
+        "defense": 198,
+        "stamina": 209
+    },
+    {
+        "pokemon_id": 150,
+        "name": "Mewtwo",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 300,
+        "defense": 182,
+        "stamina": 214
+    },
+    {
+        "pokemon_id": 151,
+        "name": "Mew",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 210,
+        "defense": 210,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 152,
+        "name": "Chikorita",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 92,
+        "defense": 122,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 153,
+        "name": "Bayleef",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 122,
+        "defense": 155,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 154,
+        "name": "Meganium",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 168,
+        "defense": 202,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 155,
+        "name": "Cyndaquil",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 116,
+        "defense": 93,
+        "stamina": 118
+    },
+    {
+        "pokemon_id": 156,
+        "name": "Quilava",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 158,
+        "defense": 126,
+        "stamina": 151
+    },
+    {
+        "pokemon_id": 157,
+        "name": "Typhlosion",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 223,
+        "defense": 173,
+        "stamina": 186
+    },
+    {
+        "pokemon_id": 158,
+        "name": "Totodile",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 117,
+        "defense": 109,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 159,
+        "name": "Croconaw",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 150,
+        "defense": 142,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 160,
+        "name": "Feraligatr",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 205,
+        "defense": 188,
+        "stamina": 198
+    },
+    {
+        "pokemon_id": 161,
+        "name": "Sentret",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 79,
+        "defense": 73,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 162,
+        "name": "Furret",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 148,
+        "defense": 125,
+        "stamina": 198
+    },
+    {
+        "pokemon_id": 163,
+        "name": "Hoothoot",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 67,
+        "defense": 88,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 164,
+        "name": "Noctowl",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 145,
+        "defense": 156,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 165,
+        "name": "Ledyba",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 72,
+        "defense": 118,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 166,
+        "name": "Ledian",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 107,
+        "defense": 179,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 167,
+        "name": "Spinarak",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 105,
+        "defense": 73,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 168,
+        "name": "Ariados",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 161,
+        "defense": 124,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 169,
+        "name": "Crobat",
+        "pokemon_type": [
+            "Poison",
+            "Flying"
+        ],
+        "attack": 194,
+        "defense": 178,
+        "stamina": 198
+    },
+    {
+        "pokemon_id": 170,
+        "name": "Chinchou",
+        "pokemon_type": [
+            "Water",
+            "Electric"
+        ],
+        "attack": 106,
+        "defense": 97,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 171,
+        "name": "Lanturn",
+        "pokemon_type": [
+            "Water",
+            "Electric"
+        ],
+        "attack": 146,
+        "defense": 137,
+        "stamina": 268
+    },
+    {
+        "pokemon_id": 172,
+        "name": "Pichu",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 77,
+        "defense": 53,
+        "stamina": 85
+    },
+    {
+        "pokemon_id": 173,
+        "name": "Cleffa",
+        "pokemon_type": [
+            "Fairy"
+        ],
+        "attack": 75,
+        "defense": 79,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 174,
+        "name": "Igglybuff",
+        "pokemon_type": [
+            "Normal",
+            "Fairy"
+        ],
+        "attack": 69,
+        "defense": 32,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 175,
+        "name": "Togepi",
+        "pokemon_type": [
+            "Fairy"
+        ],
+        "attack": 67,
+        "defense": 116,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 176,
+        "name": "Togetic",
+        "pokemon_type": [
+            "Fairy",
+            "Flying"
+        ],
+        "attack": 139,
+        "defense": 181,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 177,
+        "name": "Natu",
+        "pokemon_type": [
+            "Psychic",
+            "Flying"
+        ],
+        "attack": 134,
+        "defense": 89,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 178,
+        "name": "Xatu",
+        "pokemon_type": [
+            "Psychic",
+            "Flying"
+        ],
+        "attack": 192,
+        "defense": 146,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 179,
+        "name": "Mareep",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 114,
+        "defense": 79,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 180,
+        "name": "Flaaffy",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 145,
+        "defense": 109,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 181,
+        "name": "Ampharos",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 211,
+        "defense": 169,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 182,
+        "name": "Bellossom",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 169,
+        "defense": 186,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 183,
+        "name": "Marill",
+        "pokemon_type": [
+            "Water",
+            "Fairy"
+        ],
+        "attack": 37,
+        "defense": 93,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 184,
+        "name": "Azumarill",
+        "pokemon_type": [
+            "Water",
+            "Fairy"
+        ],
+        "attack": 112,
+        "defense": 152,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 185,
+        "name": "Sudowoodo",
+        "pokemon_type": [
+            "Rock"
+        ],
+        "attack": 167,
+        "defense": 176,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 186,
+        "name": "Politoed",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 174,
+        "defense": 179,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 187,
+        "name": "Hoppip",
+        "pokemon_type": [
+            "Grass",
+            "Flying"
+        ],
+        "attack": 67,
+        "defense": 94,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 188,
+        "name": "Skiploom",
+        "pokemon_type": [
+            "Grass",
+            "Flying"
+        ],
+        "attack": 91,
+        "defense": 120,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 189,
+        "name": "Jumpluff",
+        "pokemon_type": [
+            "Grass",
+            "Flying"
+        ],
+        "attack": 118,
+        "defense": 183,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 190,
+        "name": "Aipom",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 136,
+        "defense": 112,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 191,
+        "name": "Sunkern",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 55,
+        "defense": 55,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 192,
+        "name": "Sunflora",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 185,
+        "defense": 135,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 193,
+        "name": "Yanma",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 154,
+        "defense": 94,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 194,
+        "name": "Wooper",
+        "pokemon_type": [
+            "Water",
+            "Ground"
+        ],
+        "attack": 75,
+        "defense": 66,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 195,
+        "name": "Quagsire",
+        "pokemon_type": [
+            "Water",
+            "Ground"
+        ],
+        "attack": 152,
+        "defense": 143,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 196,
+        "name": "Espeon",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 261,
+        "defense": 175,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 197,
+        "name": "Umbreon",
+        "pokemon_type": [
+            "Dark"
+        ],
+        "attack": 126,
+        "defense": 240,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 198,
+        "name": "Murkrow",
+        "pokemon_type": [
+            "Dark",
+            "Flying"
+        ],
+        "attack": 175,
+        "defense": 87,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 199,
+        "name": "Slowking",
+        "pokemon_type": [
+            "Water",
+            "Psychic"
+        ],
+        "attack": 177,
+        "defense": 180,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 200,
+        "name": "Misdreavus",
+        "pokemon_type": [
+            "Ghost"
+        ],
+        "attack": 167,
+        "defense": 154,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 201,
+        "name": "Unown",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 136,
+        "defense": 91,
+        "stamina": 134
+    },
+    {
+        "pokemon_id": 202,
+        "name": "Wobbuffet",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 60,
+        "defense": 106,
+        "stamina": 382
+    },
+    {
+        "pokemon_id": 203,
+        "name": "Girafarig",
+        "pokemon_type": [
+            "Normal",
+            "Psychic"
+        ],
+        "attack": 182,
+        "defense": 133,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 204,
+        "name": "Pineco",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 108,
+        "defense": 122,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 205,
+        "name": "Forretress",
+        "pokemon_type": [
+            "Bug",
+            "Steel"
+        ],
+        "attack": 161,
+        "defense": 205,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 206,
+        "name": "Dunsparce",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 131,
+        "defense": 128,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 207,
+        "name": "Gligar",
+        "pokemon_type": [
+            "Ground",
+            "Flying"
+        ],
+        "attack": 143,
+        "defense": 184,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 208,
+        "name": "Steelix",
+        "pokemon_type": [
+            "Steel",
+            "Ground"
+        ],
+        "attack": 148,
+        "defense": 272,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 209,
+        "name": "Snubbull",
+        "pokemon_type": [
+            "Fairy"
+        ],
+        "attack": 137,
+        "defense": 85,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 210,
+        "name": "Granbull",
+        "pokemon_type": [
+            "Fairy"
+        ],
+        "attack": 212,
+        "defense": 131,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 211,
+        "name": "Qwilfish",
+        "pokemon_type": [
+            "Water",
+            "Poison"
+        ],
+        "attack": 184,
+        "defense": 138,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 212,
+        "name": "Scizor",
+        "pokemon_type": [
+            "Bug",
+            "Steel"
+        ],
+        "attack": 236,
+        "defense": 181,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 213,
+        "name": "Shuckle",
+        "pokemon_type": [
+            "Bug",
+            "Rock"
+        ],
+        "attack": 17,
+        "defense": 396,
+        "stamina": 85
+    },
+    {
+        "pokemon_id": 214,
+        "name": "Heracross",
+        "pokemon_type": [
+            "Bug",
+            "Fighting"
+        ],
+        "attack": 234,
+        "defense": 179,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 215,
+        "name": "Sneasel",
+        "pokemon_type": [
+            "Dark",
+            "Ice"
+        ],
+        "attack": 189,
+        "defense": 146,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 216,
+        "name": "Teddiursa",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 142,
+        "defense": 93,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 217,
+        "name": "Ursaring",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 236,
+        "defense": 144,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 218,
+        "name": "Slugma",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 118,
+        "defense": 71,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 219,
+        "name": "Magcargo",
+        "pokemon_type": [
+            "Fire",
+            "Rock"
+        ],
+        "attack": 139,
+        "defense": 191,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 220,
+        "name": "Swinub",
+        "pokemon_type": [
+            "Ice",
+            "Ground"
+        ],
+        "attack": 90,
+        "defense": 69,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 221,
+        "name": "Piloswine",
+        "pokemon_type": [
+            "Ice",
+            "Ground"
+        ],
+        "attack": 181,
+        "defense": 138,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 222,
+        "name": "Corsola",
+        "pokemon_type": [
+            "Water",
+            "Rock"
+        ],
+        "attack": 118,
+        "defense": 156,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 223,
+        "name": "Remoraid",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 127,
+        "defense": 69,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 224,
+        "name": "Octillery",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 197,
+        "defense": 141,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 225,
+        "name": "Delibird",
+        "pokemon_type": [
+            "Ice",
+            "Flying"
+        ],
+        "attack": 128,
+        "defense": 90,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 226,
+        "name": "Mantine",
+        "pokemon_type": [
+            "Water",
+            "Flying"
+        ],
+        "attack": 148,
+        "defense": 226,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 227,
+        "name": "Skarmory",
+        "pokemon_type": [
+            "Steel",
+            "Flying"
+        ],
+        "attack": 148,
+        "defense": 226,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 228,
+        "name": "Houndour",
+        "pokemon_type": [
+            "Dark",
+            "Fire"
+        ],
+        "attack": 152,
+        "defense": 83,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 229,
+        "name": "Houndoom",
+        "pokemon_type": [
+            "Dark",
+            "Fire"
+        ],
+        "attack": 224,
+        "defense": 144,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 230,
+        "name": "Kingdra",
+        "pokemon_type": [
+            "Water",
+            "Dragon"
+        ],
+        "attack": 194,
+        "defense": 194,
+        "stamina": 181
+    },
+    {
+        "pokemon_id": 231,
+        "name": "Phanpy",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 107,
+        "defense": 98,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 232,
+        "name": "Donphan",
+        "pokemon_type": [
+            "Ground"
+        ],
+        "attack": 214,
+        "defense": 185,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 233,
+        "name": "Porygon2",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 198,
+        "defense": 180,
+        "stamina": 198
+    },
+    {
+        "pokemon_id": 234,
+        "name": "Stantler",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 192,
+        "defense": 131,
+        "stamina": 177
+    },
+    {
+        "pokemon_id": 235,
+        "name": "Smeargle",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 40,
+        "defense": 83,
+        "stamina": 146
+    },
+    {
+        "pokemon_id": 236,
+        "name": "Tyrogue",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 64,
+        "defense": 64,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 237,
+        "name": "Hitmontop",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 173,
+        "defense": 207,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 238,
+        "name": "Smoochum",
+        "pokemon_type": [
+            "Ice",
+            "Psychic"
+        ],
+        "attack": 153,
+        "defense": 91,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 239,
+        "name": "Elekid",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 135,
+        "defense": 101,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 240,
+        "name": "Magby",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 151,
+        "defense": 99,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 241,
+        "name": "Miltank",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 157,
+        "defense": 193,
+        "stamina": 216
+    },
+    {
+        "pokemon_id": 242,
+        "name": "Blissey",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 129,
+        "defense": 169,
+        "stamina": 496
+    },
+    {
+        "pokemon_id": 243,
+        "name": "Raikou",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 241,
+        "defense": 195,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 244,
+        "name": "Entei",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 235,
+        "defense": 171,
+        "stamina": 251
+    },
+    {
+        "pokemon_id": 245,
+        "name": "Suicune",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 180,
+        "defense": 235,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 246,
+        "name": "Larvitar",
+        "pokemon_type": [
+            "Rock",
+            "Ground"
+        ],
+        "attack": 115,
+        "defense": 93,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 247,
+        "name": "Pupitar",
+        "pokemon_type": [
+            "Rock",
+            "Ground"
+        ],
+        "attack": 155,
+        "defense": 133,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 248,
+        "name": "Tyranitar",
+        "pokemon_type": [
+            "Rock",
+            "Dark"
+        ],
+        "attack": 251,
+        "defense": 207,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 249,
+        "name": "Lugia",
+        "pokemon_type": [
+            "Psychic",
+            "Flying"
+        ],
+        "attack": 193,
+        "defense": 310,
+        "stamina": 235
+    },
+    {
+        "pokemon_id": 250,
+        "name": "Ho-Oh",
+        "pokemon_type": [
+            "Fire",
+            "Flying"
+        ],
+        "attack": 239,
+        "defense": 244,
+        "stamina": 214
+    },
+    {
+        "pokemon_id": 251,
+        "name": "Celebi",
+        "pokemon_type": [
+            "Psychic",
+            "Grass"
+        ],
+        "attack": 210,
+        "defense": 210,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 252,
+        "name": "Treecko",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 124,
+        "defense": 94,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 253,
+        "name": "Grovyle",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 172,
+        "defense": 120,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 254,
+        "name": "Sceptile",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 223,
+        "defense": 169,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 255,
+        "name": "Torchic",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 130,
+        "defense": 87,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 256,
+        "name": "Combusken",
+        "pokemon_type": [
+            "Fire",
+            "Fighting"
+        ],
+        "attack": 163,
+        "defense": 115,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 257,
+        "name": "Blaziken",
+        "pokemon_type": [
+            "Fire",
+            "Fighting"
+        ],
+        "attack": 240,
+        "defense": 141,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 258,
+        "name": "Mudkip",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 126,
+        "defense": 93,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 259,
+        "name": "Marshtomp",
+        "pokemon_type": [
+            "Water",
+            "Ground"
+        ],
+        "attack": 156,
+        "defense": 133,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 260,
+        "name": "Swampert",
+        "pokemon_type": [
+            "Water",
+            "Ground"
+        ],
+        "attack": 208,
+        "defense": 175,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 261,
+        "name": "Poochyena",
+        "pokemon_type": [
+            "Dark"
+        ],
+        "attack": 96,
+        "defense": 61,
+        "stamina": 111
+    },
+    {
+        "pokemon_id": 262,
+        "name": "Mightyena",
+        "pokemon_type": [
+            "Dark"
+        ],
+        "attack": 171,
+        "defense": 132,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 263,
+        "name": "Zigzagoon",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 58,
+        "defense": 80,
+        "stamina": 116
+    },
+    {
+        "pokemon_id": 264,
+        "name": "Linoone",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 142,
+        "defense": 128,
+        "stamina": 186
+    },
+    {
+        "pokemon_id": 265,
+        "name": "Wurmple",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 75,
+        "defense": 59,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 266,
+        "name": "Silcoon",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 60,
+        "defense": 77,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 267,
+        "name": "Beautifly",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 189,
+        "defense": 98,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 268,
+        "name": "Cascoon",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 60,
+        "defense": 77,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 269,
+        "name": "Dustox",
+        "pokemon_type": [
+            "Bug",
+            "Poison"
+        ],
+        "attack": 98,
+        "defense": 162,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 270,
+        "name": "Lotad",
+        "pokemon_type": [
+            "Water",
+            "Grass"
+        ],
+        "attack": 71,
+        "defense": 77,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 271,
+        "name": "Lombre",
+        "pokemon_type": [
+            "Water",
+            "Grass"
+        ],
+        "attack": 112,
+        "defense": 119,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 272,
+        "name": "Ludicolo",
+        "pokemon_type": [
+            "Water",
+            "Grass"
+        ],
+        "attack": 173,
+        "defense": 176,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 273,
+        "name": "Seedot",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 71,
+        "defense": 77,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 274,
+        "name": "Nuzleaf",
+        "pokemon_type": [
+            "Grass",
+            "Dark"
+        ],
+        "attack": 134,
+        "defense": 78,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 275,
+        "name": "Shiftry",
+        "pokemon_type": [
+            "Grass",
+            "Dark"
+        ],
+        "attack": 200,
+        "defense": 121,
+        "stamina": 207
+    },
+    {
+        "pokemon_id": 276,
+        "name": "Taillow",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 106,
+        "defense": 61,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 277,
+        "name": "Swellow",
+        "pokemon_type": [
+            "Normal",
+            "Flying"
+        ],
+        "attack": 185,
+        "defense": 124,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 278,
+        "name": "Wingull",
+        "pokemon_type": [
+            "Water",
+            "Flying"
+        ],
+        "attack": 106,
+        "defense": 61,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 279,
+        "name": "Pelipper",
+        "pokemon_type": [
+            "Water",
+            "Flying"
+        ],
+        "attack": 175,
+        "defense": 174,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 280,
+        "name": "Ralts",
+        "pokemon_type": [
+            "Psychic",
+            "Fairy"
+        ],
+        "attack": 79,
+        "defense": 59,
+        "stamina": 99
+    },
+    {
+        "pokemon_id": 281,
+        "name": "Kirlia",
+        "pokemon_type": [
+            "Psychic",
+            "Fairy"
+        ],
+        "attack": 117,
+        "defense": 90,
+        "stamina": 116
+    },
+    {
+        "pokemon_id": 282,
+        "name": "Gardevoir",
+        "pokemon_type": [
+            "Psychic",
+            "Fairy"
+        ],
+        "attack": 237,
+        "defense": 195,
+        "stamina": 169
+    },
+    {
+        "pokemon_id": 283,
+        "name": "Surskit",
+        "pokemon_type": [
+            "Bug",
+            "Water"
+        ],
+        "attack": 93,
+        "defense": 87,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 284,
+        "name": "Masquerain",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 192,
+        "defense": 150,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 285,
+        "name": "Shroomish",
+        "pokemon_type": [
+            "Grass"
+        ],
+        "attack": 74,
+        "defense": 110,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 286,
+        "name": "Breloom",
+        "pokemon_type": [
+            "Grass",
+            "Fighting"
+        ],
+        "attack": 241,
+        "defense": 144,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 287,
+        "name": "Slakoth",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 104,
+        "defense": 92,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 288,
+        "name": "Vigoroth",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 159,
+        "defense": 145,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 289,
+        "name": "Slaking",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 290,
+        "defense": 166,
+        "stamina": 284
+    },
+    {
+        "pokemon_id": 290,
+        "name": "Nincada",
+        "pokemon_type": [
+            "Bug",
+            "Ground"
+        ],
+        "attack": 80,
+        "defense": 126,
+        "stamina": 104
+    },
+    {
+        "pokemon_id": 291,
+        "name": "Ninjask",
+        "pokemon_type": [
+            "Bug",
+            "Flying"
+        ],
+        "attack": 199,
+        "defense": 112,
+        "stamina": 156
+    },
+    {
+        "pokemon_id": 292,
+        "name": "Shedinja",
+        "pokemon_type": [
+            "Bug",
+            "Ghost"
+        ],
+        "attack": 153,
+        "defense": 73,
+        "stamina": 1
+    },
+    {
+        "pokemon_id": 293,
+        "name": "Whismur",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 92,
+        "defense": 42,
+        "stamina": 162
+    },
+    {
+        "pokemon_id": 294,
+        "name": "Loudred",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 134,
+        "defense": 81,
+        "stamina": 197
+    },
+    {
+        "pokemon_id": 295,
+        "name": "Exploud",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 179,
+        "defense": 137,
+        "stamina": 232
+    },
+    {
+        "pokemon_id": 296,
+        "name": "Makuhita",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 99,
+        "defense": 54,
+        "stamina": 176
+    },
+    {
+        "pokemon_id": 297,
+        "name": "Hariyama",
+        "pokemon_type": [
+            "Fighting"
+        ],
+        "attack": 209,
+        "defense": 114,
+        "stamina": 302
+    },
+    {
+        "pokemon_id": 298,
+        "name": "Azurill",
+        "pokemon_type": [
+            "Normal",
+            "Fairy"
+        ],
+        "attack": 36,
+        "defense": 71,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 299,
+        "name": "Nosepass",
+        "pokemon_type": [
+            "Rock"
+        ],
+        "attack": 82,
+        "defense": 215,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 300,
+        "name": "Skitty",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 84,
+        "defense": 79,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 301,
+        "name": "Delcatty",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 132,
+        "defense": 127,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 302,
+        "name": "Sableye",
+        "pokemon_type": [
+            "Dark",
+            "Ghost"
+        ],
+        "attack": 141,
+        "defense": 136,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 303,
+        "name": "Mawile",
+        "pokemon_type": [
+            "Steel",
+            "Fairy"
+        ],
+        "attack": 155,
+        "defense": 141,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 304,
+        "name": "Aron",
+        "pokemon_type": [
+            "Steel",
+            "Rock"
+        ],
+        "attack": 121,
+        "defense": 141,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 305,
+        "name": "Lairon",
+        "pokemon_type": [
+            "Steel",
+            "Rock"
+        ],
+        "attack": 158,
+        "defense": 198,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 306,
+        "name": "Aggron",
+        "pokemon_type": [
+            "Steel",
+            "Rock"
+        ],
+        "attack": 198,
+        "defense": 257,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 307,
+        "name": "Meditite",
+        "pokemon_type": [
+            "Fighting",
+            "Psychic"
+        ],
+        "attack": 78,
+        "defense": 107,
+        "stamina": 102
+    },
+    {
+        "pokemon_id": 308,
+        "name": "Medicham",
+        "pokemon_type": [
+            "Fighting",
+            "Psychic"
+        ],
+        "attack": 121,
+        "defense": 152,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 309,
+        "name": "Electrike",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 123,
+        "defense": 78,
+        "stamina": 120
+    },
+    {
+        "pokemon_id": 310,
+        "name": "Manectric",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 215,
+        "defense": 127,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 311,
+        "name": "Plusle",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 167,
+        "defense": 129,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 312,
+        "name": "Minun",
+        "pokemon_type": [
+            "Electric"
+        ],
+        "attack": 147,
+        "defense": 150,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 313,
+        "name": "Volbeat",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 143,
+        "defense": 166,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 314,
+        "name": "Illumise",
+        "pokemon_type": [
+            "Bug"
+        ],
+        "attack": 143,
+        "defense": 166,
+        "stamina": 163
+    },
+    {
+        "pokemon_id": 315,
+        "name": "Roselia",
+        "pokemon_type": [
+            "Grass",
+            "Poison"
+        ],
+        "attack": 186,
+        "defense": 131,
+        "stamina": 137
+    },
+    {
+        "pokemon_id": 316,
+        "name": "Gulpin",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 80,
+        "defense": 99,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 317,
+        "name": "Swalot",
+        "pokemon_type": [
+            "Poison"
+        ],
+        "attack": 140,
+        "defense": 159,
+        "stamina": 225
+    },
+    {
+        "pokemon_id": 318,
+        "name": "Carvanha",
+        "pokemon_type": [
+            "Water",
+            "Dark"
+        ],
+        "attack": 171,
+        "defense": 39,
+        "stamina": 128
+    },
+    {
+        "pokemon_id": 319,
+        "name": "Sharpedo",
+        "pokemon_type": [
+            "Water",
+            "Dark"
+        ],
+        "attack": 243,
+        "defense": 83,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 320,
+        "name": "Wailmer",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 136,
+        "defense": 68,
+        "stamina": 277
+    },
+    {
+        "pokemon_id": 321,
+        "name": "Wailord",
+        "pokemon_type": [
+            "Water"
+        ],
+        "attack": 175,
+        "defense": 87,
+        "stamina": 347
+    },
+    {
+        "pokemon_id": 322,
+        "name": "Numel",
+        "pokemon_type": [
+            "Fire",
+            "Ground"
+        ],
+        "attack": 119,
+        "defense": 79,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 323,
+        "name": "Camerupt",
+        "pokemon_type": [
+            "Fire",
+            "Ground"
+        ],
+        "attack": 194,
+        "defense": 136,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 324,
+        "name": "Torkoal",
+        "pokemon_type": [
+            "Fire"
+        ],
+        "attack": 151,
+        "defense": 203,
+        "stamina": 172
+    },
+    {
+        "pokemon_id": 325,
+        "name": "Spoink",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 125,
+        "defense": 122,
+        "stamina": 155
+    },
+    {
+        "pokemon_id": 326,
+        "name": "Grumpig",
+        "pokemon_type": [
+            "Psychic"
+        ],
+        "attack": 171,
+        "defense": 188,
+        "stamina": 190
+    },
+    {
+        "pokemon_id": 327,
+        "name": "Spinda",
+        "pokemon_type": [
+            "Normal"
+        ],
+        "attack": 116,
+        "defense": 116,
+        "stamina": 155
+    }
+]
