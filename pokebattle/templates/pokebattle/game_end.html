@@ -1,7 +1,7 @@
 
 
   <div class="game">
-    <h5>Results for {{ battle }} Battle with {{ type }}</h5>
+  <h5><b>{{ result }}</b> {{ battle }} Battle with {{ type }}</h5>
 
     <br><br>
     <div class="row valign-wrapper">
@@ -25,16 +25,25 @@
     <br>
 {#    <h6>You have 999 in {{ type }}!</h6>#}
 {#    <h6>Against 999 for {{ type_pc }}!</h6>#}
-    <br><br>
-    <h5>{{ result }}!</h5>
 
-    <br><br>
     {% if next %}
     <a onclick="load_game()" class="btn">Next Battle</a>
     {% else %}
-    <a href="{% url 'battle' %}"  class="btn">New Game</a><br>
-    <a href="{% url 'mypokemon' %}"  class="btn">Pokemon</a>
-    <a href="{% url 'stats' %}"  class="btn">Results</a>
+      <h5>You {{ final_result }} the Game!</h5>
+      {% if won %}
+      <div class="row">
+        <div class="center col s3"></div>
+        <div class="center col s6 card-panel teal">
+          <h6 class="btn disabled">New Pokemon</h6>
+          <img src="{{ won.url }}"></a>
+          <h6>{{ won.name }}</h6>
+        </div>
+        <div class="center col s3"></div>
+      </div>
+     {% endif %}
+      <a href="{% url 'battle' %}"  class="btn">New Game</a><br><br>
+      <a href="{% url 'mypokemon' %}"  class="btn">Pokemon</a>
+      <a href="{% url 'stats' %}"  class="btn">Results</a>
     {% endif %}
 
   </div>

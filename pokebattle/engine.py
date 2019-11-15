@@ -97,9 +97,12 @@ def end_battle(request, context, game, battle):
     pokemon_attack = battle.pokemon_trainer if battle.type == 1 else battle.pokemon_pc
     battle.result = get_result(battle)
     battle.save()
+    new_pokemon = None
     if battle.num == NUM_BATTLES:
         game.final_result = get_final_result(game)
         game.status = 2  # Completed
+        if game.final_result == 3:  # Get a pokemon
+            new_pokemon = get_pokemon_and_img_url(get_new_pokemon(game))
     else:
         game.current_battle += 1
     game.save()
@@ -109,7 +112,9 @@ def end_battle(request, context, game, battle):
                     'pokemon_defense': get_pokemon_and_img_url(pokemon_defense, is_back=True),
                     'pokemon_attack': get_pokemon_and_img_url(pokemon_attack),
                     'result': FINAL_RESULT_DICT.get(battle.result),
+                    'final_result': FINAL_RESULT_DICT.get(game.final_result),
                     'next': not battle.num == NUM_BATTLES,
+                    'won': new_pokemon,
                     })
     return render(request, 'pokebattle/game_end.html', context)
 
@@ -133,11 +138,31 @@ def get_result(battle):
     if not result:
         return 2  # Tie
     elif result > 0:
-        return 3  # Win
+        return 3  # Won
     else:
         return 1  # Lost
 
 
 def get_final_result(game):
     battles = Battle.objects.filter(game=game).all()
-    return 2  # TODO
+    results = [battle.result for battle in battles]
+    if results.count(3) > results.count(1):  # Won
+        return 3
+    elif results.count(3) < results.count(1):  # Lost
+        return 1
+    return 2  # Tie
+
+
+def get_new_pokemon(game):
+    trainer = game.trainer
+    battles = Battle.objects.filter(game=game).all()
+    all_pokemon = [battle.pokemon_trainer for battle in battles if battle.result == 3]
+    pokemon_collection = [pokemon for pokemon in trainer.pokemon_collection.all()]
+
+    for pokemon in all_pokemon:
+        if pokemon not in pokemon_collection:
+            trainer.pokemon_collection.add(pokemon)
+            return pokemon
+    return None
+
+
