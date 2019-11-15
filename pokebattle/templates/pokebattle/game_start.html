@@ -1,32 +1,44 @@
 
 
   <div class="game">
-    <h5>{{ battle }} Battle - {{ type }}</h5>
-
-    <br><br>
-    <div class="row valign-wrapper">
-      <div class="col s6">
-        <img src="{{ pokemon_defense.url }}">
-      </div>
-      <div class="col s6">
-        <img src="{{ pokemon_attack.url }}">
-      </div>
+    <div class="card-panel teal white-text">
+      <h5>{{ battle }} Battle - {{ type }}</h5>
     </div>
 
-    <div class="row">
-      <div class="col s6">
-        <h6>{{ pokemon_defense.name }}</h6>
+    <div id="field">
+      <br><br>
+      <div class="row valign-wrapper">
+        <div class="col s6">
+          <img src="{{ pokemon_defense.url }}">
+        </div>
+        <div class="col s6">
+          <img src="{{ pokemon_attack.url }}">
+        </div>
       </div>
-      <div class="col s6">
-        <h6>{{ pokemon_attack.name }}</h6>
-      </div>
-    </div>
 
-    <br>
-    <button onclick="load_game({move:1})" class="btn">Start</button>
+      <div class="row">
+        <div class="col s6">
+          <h6 class="chip">{{ pokemon_defense.name }}</h6>
+        </div>
+        <div class="col s6">
+          <h6 class="chip">{{ pokemon_attack.name }}</h6>
+        </div>
+      </div>
+
+      <br>
+      <button onclick="showFight()" class="btn-large red">Start</button>
+    </div>
 
   </div>
 
   <script>
+    function showFight() {
+        $("#field").html('<img class="responsive-img" src="https://media2.giphy.com/media/TpUxOJmGEaQ5a/source.gif">')
+        setTimeout(fight, 1000)
+    }
+
+    function fight(){
+        load_game({move:1});
+    }
     toast("Battle!!")
   </script>

@@ -1,0 +1,35 @@
+{% load static %}
+
+  <div class="game">
+  <div class="card-panel {{ color }} white-text">
+    <h5>You <b>{{ result }}</b> the Game!</h5>
+  </div>
+    <br><br>
+    {% if pokemon %}
+      <div class="row">
+        <div class="center col s3"></div>
+        <div class="center col s6 card-panel teal lighten-3">
+          <h6 class="white-text">New Pokemon</h6><br>
+          <img src="{{ pokemon.url }}"></a><br>
+          <h6 class="chip">{{ pokemon.name }}</h6>
+        </div>
+        <div class="center col s3"></div>
+      </div>
+    {% else %}
+      <div class="row valign-wrapper">
+        <div class="col s12">
+          <img src="http://www.pokestadium.com/sprites/xy/back/charizard.gif">
+        </div>
+      </div>
+    {% endif %}
+
+    <br>
+    <a href="{% url 'battle' %}"  class="btn">New Game</a><br><br>
+    <a href="{% url 'mypokemon' %}"  class="btn">Pokemon</a>
+    <a href="{% url 'stats' %}"  class="btn">Statistics</a>
+
+  </div>
+
+  <script>
+    {#toast("{{ result }}!")#}
+  </script>
