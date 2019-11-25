@@ -1,7 +1,7 @@
 import datetime
 import os
 import json
-import requests
+# import requests
 
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import HttpResponse
@@ -12,6 +12,7 @@ USER_LOGIN = 'user_login'
 
 
 def login(request):
+    all_pokemon = []
     try:
         trainer_id = request.session[USER_LOGIN]
         trainer = Trainer.objects.get(id=trainer_id)
@@ -23,10 +24,12 @@ def login(request):
         request.session['user_login'] = trainer.id
 
     if not Pokemon.objects.all().exists():
-        load_pokemon()
+        all_pokemon = load_pokemon()
+    else:
+        all_pokemon = Pokemon.objects.all()
 
-    return {'trainer': trainer}
-
+    return {'trainer': trainer,
+            'all_pokemon': all_pokemon}
 
 def remove_user(request):
     del request.session[USER_LOGIN]
@@ -50,6 +53,7 @@ def load_pokemon():
         open(json_path + 'pokemon_types.json') as pokemon_types:
         stats = json.load(pokemon_stats)
         types = json.load(pokemon_types)
+        pokemon_all = []
         for s, t in zip(stats, types):
             if 'form' not in s or 'Normal' in s['form']:
                 pokemon_id = s['pokemon_id']
@@ -59,14 +63,15 @@ def load_pokemon():
                 stamina = s['base_stamina']
                 pokemon_type = t['type']
                 # Save Pokemon
-                Pokemon.objects.get_or_create(pokemon_id=pokemon_id,
+                pokemon = Pokemon.objects.get_or_create(pokemon_id=pokemon_id,
                                               name=name,
                                               attack=attack,
                                               defense=defense,
                                               stamina=stamina)
+                pokemon_all.append(pokemon)
     pokemon_stats.close()
     pokemon_types.close()
-
+    return pokemon_all
 
 def fix_name(name):
     if '♂' in name:
