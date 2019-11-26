@@ -5,6 +5,7 @@ import json
 
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import HttpResponse
+from django.forms.models import model_to_dict
 
 from .models import *
 
@@ -24,9 +25,12 @@ def login(request):
 
     if not Pokemon.objects.all().exists():
         load_pokemon()
+    pokemon = [get_pokemon_and_img_url(pokemon) for pokemon in trainer.pokemon_collection.all()]
 
     return {'trainer': trainer,
-            'my_pokemon': trainer.pokemon_collection.all()}
+            'my_pokemon': pokemon,
+            'colsize': int(12 / len(pokemon)),
+            'pokemon_count': len(pokemon)}
 
 def remove_user(request):
     del request.session[USER_LOGIN]
@@ -42,6 +46,11 @@ def change_nickname(request):
         trainer.save()
     return HttpResponse(new_nickname)
 
+def get_pokemon_and_img_url(pokemon, is_back=None):
+    pokemon = model_to_dict(pokemon)
+    url = IMG_PATH + (BACK if is_back else '') + pokemon['name'].lower() + GIF
+    pokemon.update({'url': url})
+    return pokemon
 
 def load_pokemon():
     module_dir = os.path.dirname(__file__)

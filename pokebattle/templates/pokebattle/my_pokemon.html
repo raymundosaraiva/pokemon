@@ -5,14 +5,22 @@
 {% block content %}
 
   <div class="center">
-    <h5>Pokemon Page tests </h5>
+    <h5>My Pokemon ({{ pokemon_count }}) </h5>
   </div>
-
     <ul class="collection">
-        {% for pokemon in my_pokemon %}
-        <li href="{{  pokemon.url }}" class="collection-item">{{ pokemon.name }}</li>
+        {% for p in my_pokemon %}
+        <li class="collection-item avatar">
+            <img src="{{ p.url }}" alt="" class="circle">
+            <span class="title">{{ p.name }}</span>
+            <p>Attack: {{  p.attack }} <br>
+                Defense: {{ p.defense }} <br>
+                Stamina: {{ p.stamina }}
+            </p>
+        </li>
         {% endfor %}
     </ul>
+
+
 {% endblock content %}
 
 
