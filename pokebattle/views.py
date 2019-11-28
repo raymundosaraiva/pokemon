@@ -31,10 +31,10 @@ def pokemon(request, pokemon_id):
 
 def stats(request):
     context = login(request)
-    trainer_id = request.session[USER_LOGIN]
-    games = Game.objects.filter(trainer_id=trainer_id, status=2)
-    gamesWon = Game.objects.filter(trainer_id=trainer_id, status=2, final_result=3)
-    gamesLost = Game.objects.filter(trainer_id=trainer_id, status=2, final_result=1)
+    trainer = context.get('trainer')
+    games = Game.objects.filter(trainer_id=trainer.id, status=2)
+    gamesWon = Game.objects.filter(trainer_id=trainer.id, status=2, final_result=3)
+    gamesLost = Game.objects.filter(trainer_id=trainer.id, status=2, final_result=1)
     context.update({'games': games,
                     'gamesWon': gamesWon,
                     'gamesLost': gamesLost})
