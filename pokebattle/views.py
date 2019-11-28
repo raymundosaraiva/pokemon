@@ -22,6 +22,12 @@ def my_pokemon(request):
                     'pokemon_count': len(pokemon)})
     return render(request, 'pokebattle/my_pokemon.html', context)
 
+def pokemon(request, pokemon_id):
+    context = login(request)
+    pokemon = Pokemon.objects.get(pokemon_id=pokemon_id)
+    pokemon = get_pokemon_and_img_url(pokemon)
+    context.update({'pokemon': pokemon})
+    return render(request, 'pokebattle/pokemon_details.html', context)
 
 def stats(request):
     context = login(request)

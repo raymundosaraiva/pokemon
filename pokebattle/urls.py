@@ -10,4 +10,5 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('change_nickname', views.change_nickname, name='change_nickname'),
     path('loadgame', engine.load_game, name='loadgame'),
+    path('pokemon/<int:pokemon_id>', views.pokemon, name='pokemon')
 ]

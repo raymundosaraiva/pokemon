@@ -1,0 +1,23 @@
+{% extends "pokebattle/base.html" %}
+
+{% block logo %} Pokemon {% endblock logo %}
+
+{% block content %}
+  <div class="center">
+    <img src="{{ pokemon.url }}">
+    <h3> {{ pokemon.name }} </h3>
+    <h4> Attack: {{ pokemon.attack }}</h4>
+    <h4> Defense: {{ pokemon.defense }}</h4>
+    <h4> Stamina: {{ pokemon.stamina }}</h4>
+  </div>
+
+{% endblock content %}
+
+
+{% block libs %}
+
+{% endblock libs %}
+
+{% block script %}
+
+{% endblock script %}
