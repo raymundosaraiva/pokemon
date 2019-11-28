@@ -22,15 +22,10 @@ def login(request):
         trainer = Trainer()
         trainer.save()
         request.session['user_login'] = trainer.id
-
     if not Pokemon.objects.all().exists():
         load_pokemon()
-    pokemon = [get_pokemon_and_img_url(pokemon) for pokemon in trainer.pokemon_collection.all()]
+    return {'trainer': trainer}
 
-    return {'trainer': trainer,
-            'my_pokemon': pokemon,
-            'colsize': int(12 / len(pokemon)),
-            'pokemon_count': len(pokemon)}
 
 def remove_user(request):
     del request.session[USER_LOGIN]
