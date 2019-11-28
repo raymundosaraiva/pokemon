@@ -74,7 +74,7 @@ def choose_pokemon(request, context, game):
     context.update({'battle': BATTLE_NUM_DICT[battle.num],
                     'type': BATTLE_TYPE_DICT[battle.type],
                     'pokemon': pokemon,
-                    'colsize': int(12 / len(pokemon)),
+                    'colsize': int(12 / len(pokemon)) if 0 < len(pokemon) < 4 else 12,
                     'pokemon_pc': pokemon_pc
                     })
     return render(request, 'pokebattle/game_choose_pokemon.html', context)
