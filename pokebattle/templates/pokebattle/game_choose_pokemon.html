@@ -5,7 +5,7 @@
       <h5>{{ battle }} Battle - {{ type }}</h5>
       <h6>Choose your Pokemon:</h6>
     </div>
-    <br>
+
     <div class="row valign-wrapper">
       {% for p in pokemon %}
       <div class="center col s{{ colsize }}">
@@ -17,7 +17,7 @@
     <div class="row">
       {% for p in pokemon %}
       <div class="center col s{{ colsize }}">
-        <div class="chip">{{ p.name }}</div><br>
+        <div class="chip">{{ p.name }}</div>
           <br><div class="chip">
             <img src="{% static 'pokebattle/img/attack.png' %}">{{ p.attack }}
           </div>
