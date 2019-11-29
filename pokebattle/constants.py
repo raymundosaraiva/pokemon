@@ -12,5 +12,6 @@ BATTLE_NUM_DICT = dict(BATTLE_NUM)
 FINAL_RESULT_DICT = dict(FINAL_RESULT)
 
 IMG_PATH = 'http://www.pokestadium.com/sprites/xy/'
+THUMB_IMG_PATH = 'http://www.pokestadium.com/assets/img/sprites/misc/trozei/'
 BACK = 'back/'
 GIF = '.gif'

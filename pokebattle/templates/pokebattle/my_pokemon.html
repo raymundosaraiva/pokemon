@@ -1,19 +1,28 @@
 {% extends "pokebattle/base.html" %}
 
-{% block logo %} {{ pokemon_count }} Pokemon {% endblock logo %}
+{% block logo %} My Pokemon {{  pokemon_count }}{% endblock logo %}
+
 
 {% block content %}
+    <select name="sort_dropdown">
+      <option selected="selected" value="attack">Attack</option>
+      <option value="defense">Defense</option>
+      <option value="stamina">Stamina</option>
+    </select>
 
 {#  <div class="center">#}
 {#    <h5>My Pokemon ({{ pokemon_count }} ) </h5>#}
 {#  </div>#}
+
+<div class="container">
+  <input type="submit" value="Sort" name="attribute">
 
   {% if my_pokemon %}
     <ul class="collection">
         {% for p in my_pokemon %}
         <li class="collection-item avatar">
             <a href="/pokemon/{{ p.pokemon_id }}">
-                <img src="{{ p.url }}" alt="" class="circle">
+                <img src="{{ p.thumb_url }}" alt="" class="circle">
                 <span class="title">{{ p.name }}</span>
                 <p>Attack: {{  p.attack }} <br>
                     Defense: {{ p.defense }} <br>
@@ -28,7 +37,8 @@
         <h5>You Gotta Catch Them All!</h5>
       </div>
     {% endif %}
-
+</div>
+  
 {% endblock content %}
 
 
