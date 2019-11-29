@@ -4,10 +4,10 @@
   <OriginalElement>d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_trainer_pokemon_collection</OriginalElement>
   <nodes>
     <node x="264.61111111111114" y="189.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_pokemon</node>
-    <node x="309.0" y="378.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_battle</node>
-    <node x="0.0" y="422.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_trainer_pokemon_collection</node>
+    <node x="311.5" y="426.75">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_battle</node>
+    <node x="-1.25" y="507.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_trainer_pokemon_collection</node>
     <node x="192.73611111111114" y="0.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_trainer</node>
-    <node x="440.61111111111114" y="189.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_game</node>
+    <node x="481.86111111111114" y="154.0">d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_game</node>
   </nodes>
   <notes />
   <edges>
@@ -16,12 +16,6 @@
       <point x="72.25" y="164.0" />
       <point x="235.98611111111114" y="164.0" />
       <point x="-43.25" y="69.5" />
-    </edge>
-    <edge source="d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_trainer_pokemon_collection" target="d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_pokemon">
-      <point x="72.25" y="-47.5" />
-      <point x="216.75" y="353.0" />
-      <point x="290.61111111111114" y="353.0" />
-      <point x="-52.0" y="69.5" />
     </edge>
     <edge source="d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_battle" target="d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_pokemon">
       <point x="-68.66666666666669" y="-91.5" />
@@ -39,9 +33,17 @@
       <point x="322.48611111111114" y="164.0" />
       <point x="43.25" y="69.5" />
     </edge>
+    <edge source="d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_trainer_pokemon_collection" target="d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_pokemon">
+      <point x="72.25" y="-47.5" />
+      <point x="216.75" y="353.0" />
+      <point x="290.61111111111114" y="353.0" />
+      <point x="-52.0" y="69.5" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8" x="493.84999999999997" y="508.34313725490193" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.8" x="494.0" y="508.0" />
+  <SelectedNodes>
+    <node>d3cf5304-30eb-4eca-9bc4-574674c6f13e.TABLE:main.pokebattle_battle</node>
+  </SelectedNodes>
   <Categories>
     <Category>Key columns</Category>
     <Category>Columns</Category>

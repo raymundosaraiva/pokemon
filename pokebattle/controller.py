@@ -41,6 +41,7 @@ def change_nickname(request):
         trainer.save()
     return HttpResponse(new_nickname)
 
+
 def get_pokemon_and_img_url(pokemon, is_back=None):
     pokemon = model_to_dict(pokemon)
     url = IMG_PATH + (BACK if is_back else '') + pokemon['name'].lower() + GIF
@@ -48,6 +49,7 @@ def get_pokemon_and_img_url(pokemon, is_back=None):
     pokemon.update({'url': url,
                    'thumb_url': thumb_url})
     return pokemon
+
 
 def load_pokemon():
     module_dir = os.path.dirname(__file__)
@@ -73,6 +75,7 @@ def load_pokemon():
     pokemon_stats.close()
     pokemon_types.close()
 
+
 def fix_name(name):
     if '♂' in name:
         name = name.replace('♂', 'm')
@@ -84,39 +87,12 @@ def fix_name(name):
         name = name.replace('. ', '-')
     return name
 
-
-def check_url_exists(url):
-    response = requests.head(url)
-    return response.status_code == 200
-
-
-
-### Sort
-# def pokemon_sort_att(Pokemon):
-#     return Pokemon.attack
 #
-# sa_pok = sorted(Pokemon, key=pokemon_sort_att)
-#
-# def pokemon_sort_def(Pokemon):
-#     return Pokemon.defense
-#
-# sd_pok = sorted(Pokemon, key=pokemon_sort_def)
-#
-# def pokemon_sort_sta(Pokemon):
-#     return Pokemon.stamina
-#
-# ss_pok = sorted(Pokemon, key=pokemon_sort_sta)
-#
+# def check_url_exists(url):
+#     response = requests.head(url)
+#     return response.status_code == 200
 
 
-##usage
-# sa_pok = quicksort(lista1,0,len(lista1)-1,1)
-#
-# sd_pok = quicksort(lista2,0,len(lista2)-1,2)
-#
-# ss_pok = quicksort(lista3,0,len(lista3)-1,3)
-
-### Quick Sort
 def quicksort(lista, inicio, fim, atributo):
     if inicio < fim:
         split = particionar(lista, inicio, fim, atributo)
@@ -124,6 +100,7 @@ def quicksort(lista, inicio, fim, atributo):
         quicksort(lista, split+1, fim, atributo)
     else:
         return
+
 
 def particionar(lista, low, high, atributo):
     i = (low - 1)
