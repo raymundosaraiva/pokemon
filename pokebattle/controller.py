@@ -44,7 +44,9 @@ def change_nickname(request):
 def get_pokemon_and_img_url(pokemon, is_back=None):
     pokemon = model_to_dict(pokemon)
     url = IMG_PATH + (BACK if is_back else '') + pokemon['name'].lower() + GIF
-    pokemon.update({'url': url})
+    thumb_url = THUMB_IMG_PATH + pokemon['name'].lower() + GIF
+    pokemon.update({'url': url,
+                   'thumb_url': thumb_url})
     return pokemon
 
 def load_pokemon():
