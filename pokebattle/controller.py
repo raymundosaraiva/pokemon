@@ -90,25 +90,38 @@ def check_url_exists(url):
 
 
 ### Sort
+# def pokemon_sort_att(Pokemon):
+#     return Pokemon.attack
+#
+# sa_pok = sorted(Pokemon, key=pokemon_sort_att)
+#
+# def pokemon_sort_def(Pokemon):
+#     return Pokemon.defense
+#
+# sd_pok = sorted(Pokemon, key=pokemon_sort_def)
+#
+# def pokemon_sort_sta(Pokemon):
+#     return Pokemon.stamina
+#
+# ss_pok = sorted(Pokemon, key=pokemon_sort_sta)
+#
 
-def pokemon_sort_att(Pokemon):
-    return Pokemon.attack
 
-sa_pok = sorted(Pokemon, key=pokemon_sort_att)
+##usage
+# sa_pok = quicksort(lista1,0,len(lista1)-1,1)
+#
+# sd_pok = quicksort(lista2,0,len(lista2)-1,2)
+#
+# ss_pok = quicksort(lista3,0,len(lista3)-1,3)
 
-def pokemon_sort_def(Pokemon):
-    return Pokemon.defense
-
-sd_pok = sorted(Pokemon, key=pokemon_sort_def)
-
-def pokemon_sort_sta(Pokemon):
-    return Pokemon.stamina
-
-ss_pok = sorted(Pokemon, key=pokemon_sort_sta)
-
-
- 
 ### Quick Sort
+def quicksort(lista, inicio, fim, atributo):
+    if inicio < fim:
+        split = particionar(lista, inicio, fim, atributo)
+        quicksort(lista, inicio, split-1, atributo)
+        quicksort(lista, split+1, fim, atributo)
+    else:
+        return
 
 def particionar(lista, inicio, fim, atributo):
     pivo = lista[fim]
@@ -119,28 +132,15 @@ def particionar(lista, inicio, fim, atributo):
     valor_inferior = 0
     valor_superior = 0
 
-    
-
     ok = 0
     while not ok:
 
         while not ok:
             inferior = inferior + 1
 
-            if(atributo == 1):
-                valor_inferior = lista[inferior].get_attack()
-                valor_superior = lista[superior].get_attack()
-                valor_pivo = lista[fim].get_attack()
-            elif(atributo == 2):
-                valor_inferior = lista[inferior].get_defense()
-                valor_superior = lista[superior].get_defense()
-                valor_pivo = lista[fim].get_defense()
-            else:
-                valor_inferior = lista[inferior].get_stamina()
-                valor_superior = lista[superior].get_stamina()
-                valor_pivo = lista[fim].get_stamina()
-
-
+            valor_inferior = lista[inferior].get(atributo)
+            valor_superior = lista[superior].get(atributo)
+            valor_pivo = lista[fim].get(atributo)
 
             if inferior == superior:
                 ok = 1
@@ -151,20 +151,11 @@ def particionar(lista, inicio, fim, atributo):
                 break
 
         while not ok:
-            superior = superior-1
+            superior = superior - 1
 
-            if(atributo == 1):
-                valor_inferior = lista[inferior].get_attack()
-                valor_superior = lista[superior].get_attack()
-                valor_pivo = lista[fim].get_attack()
-            elif(atributo == 2):
-                valor_inferior = lista[inferior].get_defense()
-                valor_superior = lista[superior].get_defense()
-                valor_pivo = lista[fim].get_defense()
-            else:
-                valor_inferior = lista[inferior].get_stamina()
-                valor_superior = lista[superior].get_stamina()
-                valor_pivo = lista[fim].get_stamina()
+            valor_inferior = lista[inferior].get(atributo)
+            valor_superior = lista[superior].get(atributo)
+            valor_pivo = lista[fim].get(atributo)
 
             if superior == inferior:
                 ok = 1
@@ -177,19 +168,7 @@ def particionar(lista, inicio, fim, atributo):
     lista[superior] = pivo
     return superior
 
-def quicksort(lista, inicio, fim, atributo):
-    if inicio < fim:
-        split = particionar(lista, inicio, fim, atributo)
-        quicksort(lista, inicio, split-1, atributo)
-        quicksort(lista, split+1, fim, atributo)
-    else:
-        return
 
 
 
-sa_pok = quicksort(lista1,0,len(lista1)-1,1)
-
-sd_pok = quicksort(lista2,0,len(lista2)-1,2)
-
-ss_pok = quicksort(lista3,0,len(lista3)-1,3)
 

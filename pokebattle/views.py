@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 from .controller import *
 
-
 def index(request):
     context = login(request)
     return render(request, 'pokebattle/base.html', context)
@@ -17,6 +16,7 @@ def my_pokemon(request):
     context = login(request)
     trainer = context.get('trainer')
     pokemon = [get_pokemon_and_img_url(pokemon) for pokemon in trainer.pokemon_collection.all()]
+    quicksort(pokemon, 0, len(pokemon) - 1, "defense")
     context.update({'my_pokemon': pokemon,
                     'pokemon_count': len(pokemon)})
     return render(request, 'pokebattle/my_pokemon.html', context)
