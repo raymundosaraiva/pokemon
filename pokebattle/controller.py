@@ -123,52 +123,14 @@ def quicksort(lista, inicio, fim, atributo):
     else:
         return
 
-def particionar(lista, inicio, fim, atributo):
-    pivo = lista[fim]
-    inferior = inicio-1
-    superior = fim
+def particionar(lista, low, high, atributo):
+    i = (low - 1)
+    pivot = lista[high].get(atributo)
 
-    valor_pivo = 0
-    valor_inferior = 0
-    valor_superior = 0
+    for j in range(low, high):
+        if lista[j].get(atributo) <= pivot:
+            i = i + 1
+            lista[i], lista[j] = lista[j], lista[i]
 
-    ok = 0
-    while not ok:
-
-        while not ok:
-            inferior = inferior + 1
-
-            valor_inferior = lista[inferior].get(atributo)
-            valor_superior = lista[superior].get(atributo)
-            valor_pivo = lista[fim].get(atributo)
-
-            if inferior == superior:
-                ok = 1
-                break
-
-            if valor_inferior > valor_pivo:
-                lista[superior] = lista[inferior]
-                break
-
-        while not ok:
-            superior = superior - 1
-
-            valor_inferior = lista[inferior].get(atributo)
-            valor_superior = lista[superior].get(atributo)
-            valor_pivo = lista[fim].get(atributo)
-
-            if superior == inferior:
-                ok = 1
-                break
-
-            if valor_superior < valor_pivo:
-                lista[inferior] = lista[superior]
-                break
-
-    lista[superior] = pivo
-    return superior
-
-
-
-
-
+    lista[i + 1], lista[high] = lista[high], lista[i + 1]
+    return (i + 1)
