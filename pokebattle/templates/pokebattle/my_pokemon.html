@@ -1,12 +1,12 @@
 {% extends "pokebattle/base.html" %}
 
-{% block logo %} Pokemon {% endblock logo %}
+{% block logo %} {{ pokemon_count }} Pokemon {% endblock logo %}
 
 {% block content %}
 
-  <div class="center">
-    <h5>My Pokemon ({{ pokemon_count }}) </h5>
-  </div>
+{#  <div class="center">#}
+{#    <h5>My Pokemon ({{ pokemon_count }} ) </h5>#}
+{#  </div>#}
 
   {% if my_pokemon %}
     <ul class="collection">
