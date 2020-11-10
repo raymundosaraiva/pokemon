@@ -144,7 +144,7 @@ def result_color(result):
 
 def get_pokemon_and_img_url(pokemon, is_back=None):
     pokemon = model_to_dict(pokemon)
-    url = IMG_PATH + (BACK if is_back else '') + pokemon['name'].lower() + GIF
+    url = IMG_PATH + (BACK if is_back else 'normal/') + pokemon['name'].lower() + GIF
     pokemon.update({'url': url})
     return pokemon
 

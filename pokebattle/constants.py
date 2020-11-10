@@ -10,8 +10,9 @@ BATTLE_TYPE_DICT = dict(BATTLE_TYPE)
 GAME_MODE_DICT = dict(GAME_MODE)
 BATTLE_NUM_DICT = dict(BATTLE_NUM)
 FINAL_RESULT_DICT = dict(FINAL_RESULT)
-
-IMG_PATH = 'http://www.pokestadium.com/sprites/xy/'
+# https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif
+# https://img.pokemondb.net/sprites/black-white/anim/back-normal/bulbasaur.gif
+IMG_PATH = 'https://img.pokemondb.net/sprites/black-white/anim/'
 THUMB_IMG_PATH = 'http://www.pokestadium.com/assets/img/sprites/misc/trozei/'
-BACK = 'back/'
+BACK = 'back-normal/'
 GIF = '.gif'
