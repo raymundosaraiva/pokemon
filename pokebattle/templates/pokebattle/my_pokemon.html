@@ -1,4 +1,5 @@
 {% extends "pokebattle/base.html" %}
+{% load static %}
 
 {% block logo %} {{  pokemon_count }} Pokemon {% endblock logo %}
 
@@ -21,15 +22,26 @@
   {% if my_pokemon %}
     <ul class="collection">
         {% for p in my_pokemon %}
-        <li class="collection-item avatar">
-            <a href="/pokemon/{{ p.pokemon_id }}">
-                <img src="{{ p.thumb_url }}" alt="" class="circle">
-                <span class="title">{{ p.name }}</span>
-                <p>Attack: {{  p.attack }} <br>
-                    Defense: {{ p.defense }} <br>
-                    Stamina: {{ p.stamina }}
-                </p>
-            </a>
+        <li class="collection-item">
+          <a href="/pokemon/{{ p.pokemon_id }}"><br>
+            <div class="row">
+              <div class="col s6 center-align">
+                <img src="{{ p.url }}" >
+                <br><h6 class="chip"><img src="{% static 'pokebattle/img/pokeball.png' %}"><b style="display:flex; justify-content:center; align-items:center;">{{ p.name }}</b></h6>
+              </div>
+              <div class="col s6">
+                <div class="chip">
+                  <img src="{% static 'pokebattle/img/attack.png' %}">A: {{ p.attack }}
+                </div>
+                <br><div class="chip">
+                  <img src="{% static 'pokebattle/img/defense.png' %}">D: {{ p.defense }}
+                </div>
+                <br><div class="chip">
+                  &#9889; &nbsp; S: {{ p.stamina }}
+                </div>
+              </div>
+            </div>
+          </a>
         </li>
         {% endfor %}
     </ul>

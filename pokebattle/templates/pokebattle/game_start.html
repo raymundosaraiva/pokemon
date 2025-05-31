@@ -1,4 +1,4 @@
-
+{% load static %}
 
   <div class="game">
     <div class="card-panel teal white-text">
@@ -19,9 +19,30 @@
       <div class="row">
         <div class="col s6">
           <h6 class="chip">{{ pokemon_defense.name }}</h6>
+          <br><div class="chip">
+            <img src="{% static 'pokebattle/img/attack.png' %}">{{ pokemon_defense.attack }}
+          </div>
+          <div class="chip">
+            <img src="{% static 'pokebattle/img/defense.png' %}">{{ pokemon_defense.defense }}
+          </div>
         </div>
         <div class="col s6">
           <h6 class="chip">{{ pokemon_attack.name }}</h6>
+          <br><div class="chip">
+            <img src="{% static 'pokebattle/img/attack.png' %}">{{ pokemon_attack.attack }}
+          </div>
+          <div class="chip">
+            <img src="{% static 'pokebattle/img/defense.png' %}">{{ pokemon_attack.defense }}
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col s6">
+          {% if type == 'Defense' %}Yours{% else %}Opponent{% endif %}<br>
+        </div>
+        <div class="col s6">
+          {% if type == 'Attack' %}Yours{% else %}Opponent{% endif %}<br>
         </div>
       </div>
 

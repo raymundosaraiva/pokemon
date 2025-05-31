@@ -1,15 +1,31 @@
 {% extends "pokebattle/base.html" %}
+{% load static %}
 
 {% block logo %} Pokemon {% endblock logo %}
 
 {% block content %}
-  <div class="center">
-    <img src="{{ pokemon.url }}">
-    <h3> {{ pokemon.name }} </h3>
-    <h4> Attack: {{ pokemon.attack }}</h4>
-    <h4> Defense: {{ pokemon.defense }}</h4>
-    <h4> Stamina: {{ pokemon.stamina }}</h4>
+<br><br>
+<div class="row">
+  <div class="col s12 center-align">
+    <img src="{{ pokemon.url }}" >
+    <br><h6 class="chip"><img src="{% static 'pokebattle/img/pokeball.png' %}"><b style="display:flex; justify-content:center; align-items:center;">{{ pokemon.name }}</b></h6>
   </div>
+
+</div>
+<div class="row">
+  <div class="col s12 center-align">
+    <div class="chip">
+      <img src="{% static 'pokebattle/img/attack.png' %}">Attack: {{ pokemon.attack }}
+    </div>
+    <br><div class="chip">
+      <img src="{% static 'pokebattle/img/defense.png' %}">Defense: {{ pokemon.defense }}
+    </div>
+    <br><div class="chip">
+      &#9889; &nbsp; Stamina: {{ pokemon.stamina }}
+    </div>
+  </div>
+</div>
+
 
 {% endblock content %}
 
